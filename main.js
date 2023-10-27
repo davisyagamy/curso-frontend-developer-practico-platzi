@@ -12,6 +12,12 @@ menuCarIcon.addEventListener('click',toogleCarAside);
 
 
 function toggleDesktopMenu(){
+    const isAsideClosed = aside.classList.contains('inactive');
+    if (!isAsideClosed){
+        aside.classList.add('inactive')
+    }
+
+
     desktopMenu.classList.toggle('inactive');
 }
 
@@ -19,7 +25,7 @@ function toogleMobileMenu(){
     const isAsideClosed = aside.classList.contains('inactive');
 
     if (!isAsideClosed){
-        mobileMenu.classList.add('inactive')
+        aside.classList.add('inactive')
     }
     mobileMenu.classList.toggle('inactive');
 }
@@ -32,4 +38,6 @@ function toogleCarAside(){
         mobileMenu.classList.add('inactive')
         //abrir el aside
     }
+
+    aside.classList.toggle('inactive')
 }

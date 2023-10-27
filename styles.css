@@ -11,6 +11,13 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+
+.inactive{
+    display: none;
+}
+
+/* Navbar (general) */
+
 }
 nav {
     display: flex;
@@ -19,16 +26,15 @@ nav {
     border-bottom: 1px solid var(--very-light-pink);
 }
 
-.inactive{
-    display: none;
-}
 
 .menu {
     display: none;
 }
+
 .logo {
     width: 100px;
 }
+
 .navbar-left ul,
 .navbar-right ul {
     list-style: none;
@@ -38,12 +44,15 @@ nav {
     align-items: center;
     height: 60px;
 }
+
 .navbar-left {
     display: flex;
 }
+
 .navbar-left ul {
     margin-left: 12px;
 }
+
 .navbar-left ul li a,
 .navbar-right ul li a {
     text-decoration: none;
@@ -81,6 +90,8 @@ nav {
     align-items: center;
 }
 
+
+/* Menu en desktop */
 .desktop-menu {
     position: absolute;
     top: 60px;
